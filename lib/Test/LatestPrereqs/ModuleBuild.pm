@@ -58,11 +58,17 @@ Test::LatestPrereqs::ModuleBuild
 
 =head1 SYNOPSIS
 
+  my @requires = Test::LatestPrereqs::ModuleBuild->parse($build_pl);
+
 =head1 DESCRIPTION
+
+This is used internally to parse Build.PL (with L<Module::Build>) to get requirements.
 
 =head1 METHODS
 
 =head2 parse
+
+parses Build.PL and returns a list of requirements.
 
 =head1 AUTHOR
 

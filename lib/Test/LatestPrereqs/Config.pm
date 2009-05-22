@@ -82,11 +82,22 @@ Test::LatestPrereqs::Config
 
 =head1 SYNOPSIS
 
+  my $required = Test::LatestPrereqs::Config->load;
+  Test::LatestPrereqs::Config->save($arrayref_of_requirements);
+
 =head1 DESCRIPTION
+
+This is used internally to handle configuration.
 
 =head1 METHODS
 
 =head2 load
+
+loads a configuration file from your home directory (or current directory if L<File::HomeDir> is not available).
+
+=head2 save
+
+stores the configuration into the file.
 
 =head1 AUTHOR
 
