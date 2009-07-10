@@ -7,7 +7,7 @@ use CPAN::Version;
 use Test::LatestPrereqs::Config;
 use base 'Exporter';
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our @EXPORT = qw(all_prereqs_are_latest);
 

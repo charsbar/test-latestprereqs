@@ -1,7 +1,14 @@
 use strict;
 use warnings;
-use Test::More tests => 2;
+use Test::More;
 use Test::LatestPrereqs;
+
+BEGIN {
+  eval "require Module::Build";
+  plan skip_all => "this test requires Module::Build" if $@;
+}
+
+plan tests => 2;
 
 no warnings 'redefine';
 
